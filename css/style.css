@@ -151,6 +151,7 @@ a {
   /* flex-basis: 150px; */
 }
 .album_container .album_img img {
+  display: block;
   width: 100%;
 }
 .album_container .album_img {
