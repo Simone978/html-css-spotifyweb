@@ -127,9 +127,16 @@ a {
   width: 320px;
   height: 100%;
   background: blue;
+  padding: 10px;
 }
 .main-nav-header {
   background-color: purple;
+}
+.main_nav_logo .big_logo, .xs_logo {
+  height: 50px;
+}
+.main_nav_logo .xs_logo {
+  display: none;
 }
 .main-nav-main {
   height: 150px;
@@ -146,6 +153,13 @@ a {
 
 @media screen and (max-width: 750px) {
   .playlist, .playlist-title {
+    display: none;
+  }
+
+  .main_nav_logo .xs_logo {
+    display: block;
+  }
+  .main_nav_logo .big_logo {
     display: none;
   }
 }
@@ -194,6 +208,7 @@ a {
 .container_album {
   width: 15%;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .album_container {
@@ -241,6 +256,7 @@ a {
   width: calc(100% - 320px);
   height: 90px;
   padding: 5px;
+  z-index: 1;
   background-color: rgba(3%, 4%, 7%, 0.5);
 }
 .btn {
