@@ -6,7 +6,8 @@
 
 body {
   background-color: black;
-  font-size: 16px;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* formatting */
@@ -23,11 +24,37 @@ a {
   text-align: center;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 
 /* colors */
 
 
 /* utility */
+
+.section_title {
+  color: white;
+}
+.section_subtitle {
+  color: #76787D;
+}
+
+.title_nosub {
+  margin-bottom: 20px;
+}
+.title_sub {
+  margin-bottom: 5px;
+}
+
+.round {
+  border-radius: 50%;
+}
 
 
 .wrapper {
@@ -129,8 +156,12 @@ a {
   padding-left: 20px;
   width: calc(100% - 320px);
   height: 100%;
-  background-color: orange;
+  background-color: #141922;
   overflow-y: scroll;
+}
+.main_menu {
+  margin-top: 10px;
+  margin-bottom: 35px;
 }
 .main_menu_ul {
   display: flex;
@@ -139,12 +170,26 @@ a {
 .main_menu_ul li {
   padding: 0 10px;
 }
+.main_menu-active a:after {
+  content:"";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #ADFF2F;
+  margin: auto;
+}
+.main_menu_ul li a {
+  font-size: 0.8em;
+  color: #76787D;
+}
 
 
 /* sezione righe album */
 
+
 .container_album_row{
   display: flex;
+  margin: 20px 0;
 }
 .container_album {
   width: 15%;
@@ -179,6 +224,12 @@ a {
   font-size: 2.5rem;
   color: white;
 }
+.album_title {
+  color: white;
+}
+.album_subtitle {
+  color: #76787D;
+}
 
 .call-to-action {
   position: fixed;
@@ -190,12 +241,17 @@ a {
   width: calc(100% - 320px);
   height: 90px;
   padding: 5px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(3%, 4%, 7%, 0.5);
 }
 .btn {
   display: inline-block;
   font-size: 20px;
-  background-color: white;
+  border: 1px solid white;
+  color: white;
+  font-size: 0.9em;
+  border-radius: 20px;
+  margin-right: 10px;
+  padding: 10px;
 }
 
 @media screen and (max-width:970px){
