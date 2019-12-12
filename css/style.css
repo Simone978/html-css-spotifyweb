@@ -6,7 +6,29 @@
 
 body {
   background-color: black;
+  font-size: 16px;
 }
+
+/* formatting */
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+/* colors */
+
+
+/* utility */
+
 
 .wrapper {
   width: 100%;
@@ -97,11 +119,46 @@ body {
 
 /* main content */
 .main-content {
+  padding-top: 90px;
+  padding-left: 10px;
   width: calc(100% - 320px);
   height: 100%;
   background-color: orange;
   overflow-y: scroll;
 }
+.main_menu_ul {
+  display: flex;
+  justify-content: center;
+}
+.main_menu_ul li {
+  padding: 0 10px;
+}
+
+.album_container {
+  width: 200px;
+  height: 300px;
+}
+.album_container .album_img img {
+  width: 200px;
+}
+.album_container .album_img {
+  position: relative;
+}
+.album_container .overlay {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0%, 0%, 0%, 0.5);
+}
+.album_container .overlay .icon_play{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: white;
+}
+
 .call-to-action {
   position: fixed;
   top: 0;
