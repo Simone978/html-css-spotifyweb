@@ -20,6 +20,10 @@ a {
   text-decoration: none;
 }
 
+li a{
+  color: #76787D;
+}
+
 .text-center {
   text-align: center;
 }
@@ -130,7 +134,7 @@ a {
   padding: 10px;
 }
 .main-nav-header {
-  background-color: purple;
+  background-color: #000;
 }
 .main-nav-header .nav-menu i {
   font-size: 1.5em;
@@ -144,10 +148,20 @@ a {
 }
 
 .nav_menu_active {
-  border-left: 2px solid green;
   margin-left: -10px;
-  padding-left: 10px;
+  padding-left: 9px;
+  color: #D2D2D2;
+  border-left: 2px solid #ADFF2F;
 }
+
+.nav-menu li {
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+.nav-menu i{
+  vertical-align: middle;
+}
+
 .main-nav-main {
   height: 150px;
   overflow-y: auto;
