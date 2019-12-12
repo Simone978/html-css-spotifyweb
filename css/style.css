@@ -120,7 +120,7 @@ a {
 /* main content */
 .main-content {
   padding-top: 90px;
-  padding-left: 10px;
+  padding-left: 20px;
   width: calc(100% - 320px);
   height: 100%;
   background-color: orange;
@@ -134,20 +134,34 @@ a {
   padding: 0 10px;
 }
 
+
+/* sezione righe album */
+
+.container_album_row{
+  display: flex;
+}
+.container_album {
+  width: 15%;
+  margin-right: 20px;
+}
+
 .album_container {
-  width: 200px;
-  height: 300px;
+  /* height: 300px; */
+  width: 100%;
+  /* flex-basis: 150px; */
 }
 .album_container .album_img img {
-  width: 200px;
+  width: 100%;
 }
 .album_container .album_img {
   position: relative;
 }
 .album_container .overlay {
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   background-color: rgba(0%, 0%, 0%, 0.5);
 }
 .album_container .overlay .icon_play{
@@ -175,6 +189,28 @@ a {
   display: inline-block;
   font-size: 20px;
   background-color: white;
+}
+
+@media screen and (max-width:970px){
+  .container_album_row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container_album {
+    /* height: 300px; */
+    flex-basis: calc(100% / 5);
+  }
+}
+
+@media screen and (max-width:750px){
+  .container_album_row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container_album {
+    /* height: 300px; */
+    flex-basis: calc(100% / 3);
+  }
 }
 
 /* footer */
