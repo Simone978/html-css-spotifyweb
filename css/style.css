@@ -355,7 +355,6 @@ li a{
     flex-wrap: wrap;
   }
   .container_album {
-    /* height: 300px; */
     flex-basis: calc(100% / 5);
   }
 }
@@ -373,6 +372,7 @@ li a{
   .container_album {
     flex-basis: calc(100% / 3);
   }
+
 }
 
 /* footer */
