@@ -355,6 +355,7 @@ li a{
     flex-wrap: wrap;
   }
   .container_album {
+    width: 50%;
     flex-basis: calc(100% / 5);
   }
 }
@@ -370,6 +371,7 @@ li a{
     flex-wrap: wrap;
   }
   .container_album {
+    width: 30%;
     flex-basis: calc(100% / 3);
   }
 
@@ -556,7 +558,7 @@ i.bigger {
     width: 25px;
   }
   .riprodution-circle {
-    left: 80px;
+    left: 40px;
   }
   .riprodution .num {
     padding: 0 5px;
