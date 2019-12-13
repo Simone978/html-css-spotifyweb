@@ -198,13 +198,26 @@ li a{
   padding: 5px 0;
   font-size: 0.9em;
 }
-.playlist li a {
 
+.main-nav-footer h4{
+  font-size: 0.9em;
+  border-bottom: 2px solid;
+  padding-bottom: 5px;
+}
+.main-nav-footer h3{
+  line-height: 35px;
+}
+.main-nav-footer h3 span{
+  color: white;
+  vertical-align: middle;
+}
+.icon-avatar {
+  color: #76787D;
+  font-size: 2em;
+  padding-top: 10px;
+  vertical-align: middle;
 }
 
-.main-nav-footer {
-  background-color: brown;
-}
 
 @media screen and (max-width: 750px) {
   .playlist, .playlist-title {
