@@ -168,7 +168,7 @@ li a{
 
 .nav_img{
   vertical-align: middle;
-  fill: #cd3512;
+  filter: sepia(1);
   width: 30px;
 }
 
@@ -406,4 +406,22 @@ li a{
   justify-content: space-between;
   align-items: center;
   margin: 0 10px;
+}
+
+.info_title {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.info img {
+  width: 50px;
+  vertical-align: middle;
+}
+
+.icon-first {
+  padding-left: 20px;
+  padding-right: 5px;
+}
+.footer-icon {
+  color: #76787D;
 }
