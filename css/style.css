@@ -134,7 +134,7 @@ li a{
   width: 250px;
   height: 100%;
   background: #000;
-  padding: 10px;
+  padding: 20px;
 }
 .main-nav-header {
   background-color: #000;
@@ -151,8 +151,8 @@ li a{
 }
 
 .nav_menu_active {
-  margin-left: -10px;
-  padding-left: 9px;
+  margin-left: -20px;
+  padding-left: 19px;
   color: #D2D2D2;
   border-left: 2px solid #ADFF2F;
 }
@@ -165,8 +165,11 @@ li a{
  padding-top: 5px;
  padding-bottom: 5px;
 }
-.nav-menu i{
+
+.nav_img{
   vertical-align: middle;
+  fill: #cd3512;
+  width: 30px;
 }
 
 .playlist-title {
@@ -205,32 +208,48 @@ li a{
   padding-bottom: 5px;
 }
 .main-nav-footer h3{
+  margin-top: 5px;
   line-height: 35px;
 }
 .main-nav-footer h3 span{
   color: white;
   vertical-align: middle;
 }
-.icon-avatar {
-  color: #76787D;
-  font-size: 2em;
-  padding-top: 10px;
-  vertical-align: middle;
+.profile {
+  border-radius: 50%;
+  padding: 2px;
+  background-color: #8F8F8F;
 }
 
 
 @media screen and (max-width: 750px) {
+
+  .main-nav {
+    width: 50px;
+  }
+
   .playlist, .playlist-title {
     display: none;
+  }
+
+  .xs_logo {
+    width: 30px;
+    margin-bottom: 5px
   }
 
   .main_nav_logo .xs_logo {
     display: block;
   }
-  .main_nav_logo .big_logo {
+  .main_nav_logo .big_logo, span {
     display: none;
   }
+  .main-nav-footer h4{
+    border-bottom: none;
+    text-align: center;
+  }
+
 }
+
 
 /* main content */
 .main-content {
@@ -263,6 +282,13 @@ li a{
 .main_menu_ul li a {
   font-size: 0.8em;
   color: #76787D;
+}
+
+@media screen and (max-width: 750px) {
+
+  .main-content {
+    width: calc(100% - 50px);
+  }
 }
 
 
@@ -352,6 +378,11 @@ li a{
 }
 
 @media screen and (max-width:750px){
+
+  /* .call-to-action {
+    width: calc(100% - 50px);
+  } */
+
   .container_album_row{
     display: flex;
     flex-wrap: wrap;
