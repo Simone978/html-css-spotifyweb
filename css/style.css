@@ -391,7 +391,8 @@ li a{
 }
 
 .info {
-  min-width: 180px;
+  display: flex;
+  flex-wrap: nowrap;
 }
 .info:hover .main_title {
   color: white;
@@ -486,7 +487,12 @@ i.bigger {
 }
 
 .volume {
-  min-width: 250px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.volume_icons {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .audio {
@@ -559,7 +565,7 @@ i.bigger {
   }
 
   .audio {
-    width: 50px;
+    width: 80px;
   }
 
   .effective_audio {
