@@ -281,6 +281,10 @@ li a{
   display: block;
 }
 
+.album_row {
+width: 100%;
+}
+
 .album_container .album_img img {
   display: block;
   width: 100%;
@@ -355,7 +359,6 @@ li a{
     flex-wrap: wrap;
   }
   .container_album {
-    width: 0;
     flex-basis: calc(100% / 5);
   }
 
@@ -510,11 +513,11 @@ i.bigger {
 }
 
 .effective_audio {
-  width: 100px;
+  width: 180px;
 }
 
 .circle_audio {
-  margin-left: 38px;
+  margin-left: 97px;
 }
 
 .volume_icons {
@@ -548,11 +551,11 @@ i.bigger {
   }
 
   .effective_audio {
-    width: 50px;
+    width: 80px;
   }
 
   .circle_audio {
-    margin-left: 40px;
+    margin-left: 60px;
   }
 
 }
@@ -563,10 +566,10 @@ i.bigger {
     width: 100px;
   }
   .riprodution-effective {
-    width: 25px;
+    width: 26px;
   }
   .riprodution-circle {
-    left: 40px;
+    left: 35px;
   }
   .riprodution .num {
     padding: 0 5px;
@@ -579,11 +582,11 @@ i.bigger {
   }
 
   .effective_audio {
-    width: 25px;
+    width: 65px;
   }
 
   .circle_audio {
-    margin-left: 25px;
+    margin-left: 100px;
   }
 
 }
