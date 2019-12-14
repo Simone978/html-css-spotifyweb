@@ -271,13 +271,7 @@ li a{
   display: flex;
   margin: 20px 0;
 }
-/* .container_album_row:after{
-  content: "";
-  display: table;
-  clear: both;
-} */
 .container_album {
-  /* float: left; */
   flex-basis: calc((100% / 6) - 20px);
   margin-right: 20px;
   margin-bottom: 20px;
@@ -363,7 +357,6 @@ li a{
     flex-wrap: wrap;
   }
   .container_album {
-    /* width: calc((100% / 4) - 20px); */
     flex-basis: calc((100% / 4) - 20px);
   }
 
@@ -372,8 +365,6 @@ li a{
 @media screen and (max-width:750px){
 
   .container_album_row{
-    /* display: flex;
-    justify-content: center; */
     margin: 0;
   }
 
@@ -391,7 +382,6 @@ li a{
   }
   .container_album {
     flex-basis: calc((100% / 2) - 20px);
-    /* width: calc((100% / 2) - 20px) */
   }
 
 }
