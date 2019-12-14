@@ -271,12 +271,19 @@ li a{
   display: flex;
   margin: 20px 0;
 }
+/* .container_album_row:after{
+  content: "";
+  display: table;
+  clear: both;
+} */
 .container_album {
-  width: 15%;
+  /* float: left; */
+  flex-basis: calc((100% / 6) - 20px);
   margin-right: 20px;
   margin-bottom: 20px;
   cursor: pointer;
 }
+
 .container_album:hover .overlay{
   display: block;
 }
@@ -356,7 +363,8 @@ li a{
     flex-wrap: wrap;
   }
   .container_album {
-    flex-basis: calc(100% / 5);
+    /* width: calc((100% / 4) - 20px); */
+    flex-basis: calc((100% / 4) - 20px);
   }
 
 }
@@ -364,8 +372,8 @@ li a{
 @media screen and (max-width:750px){
 
   .container_album_row{
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     margin: 0;
   }
 
@@ -382,7 +390,8 @@ li a{
     flex-wrap: wrap;
   }
   .container_album {
-    flex-basis: calc(100% / 3);
+    flex-basis: calc((100% / 2) - 20px);
+    /* width: calc((100% / 2) - 20px) */
   }
 
 }
