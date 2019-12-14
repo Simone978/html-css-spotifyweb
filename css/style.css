@@ -363,8 +363,18 @@ li a{
 
 @media screen and (max-width:750px){
 
+  .container_album_row{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
   .call-to-action {
     width: calc(100% - 50px);
+  }
+
+  .album_row {
+    padding-top: 20px;
   }
 
   .container_album_row{
@@ -396,9 +406,9 @@ li a{
   display: flex;
   flex-wrap: nowrap;
 }
-.info:hover .main_title {
-  color: white;
-  text-decoration: underline;
+.info img {
+  width: 50px;
+  vertical-align: middle;
 }
 
 .info_title {
@@ -406,10 +416,11 @@ li a{
   vertical-align: middle;
   margin-left: 10px;
 }
-.info img {
-  width: 50px;
-  vertical-align: middle;
+.info_title:hover .main_title {
+  color: white;
+  text-decoration: underline;
 }
+
 .info_icon i:hover {
   color: white;
 }
