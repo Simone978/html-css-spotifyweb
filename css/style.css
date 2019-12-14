@@ -43,6 +43,7 @@ li a{
   color: white;
 }
 
+
 /* utility */
 
 .section_title {
@@ -64,21 +65,24 @@ li a{
 }
 
 
+/* generic */
+
 .wrapper {
   width: 100%;
   height: 100vh;
   background-color: red;
 }
 
-
-/* Flex */
 .main {
   display: flex;
   flex-direction: row;
   height: calc(100% - 90px);
   overflow: hidden;
 }
+
+
 /* main nav */
+
 .main-nav {
   display: flex;
   flex-direction: column;
@@ -156,6 +160,7 @@ li a{
   overflow-y: auto;
   flex-grow: 2;
 }
+
 .playlist li {
   color: #76787D;
   padding: 5px 0;
@@ -182,6 +187,7 @@ li a{
   color: white;
   vertical-align: middle;
 }
+
 .profile {
   border-radius: 50%;
   padding: 2px;
@@ -215,11 +221,11 @@ li a{
     border-bottom: none;
     text-align: center;
   }
-
 }
 
 
 /* main content */
+
 .main-content {
   padding-top: 90px;
   padding-left: 20px;
@@ -266,7 +272,6 @@ li a{
 
 /* sezione righe album */
 
-
 .container_album_row{
   display: flex;
   margin: 20px 0;
@@ -277,7 +282,6 @@ li a{
   margin-bottom: 20px;
   cursor: pointer;
 }
-
 .container_album:hover .overlay{
   display: block;
 }
@@ -322,6 +326,8 @@ li a{
   font-size: 0.8em;
 }
 
+/* barra superiore */
+
 .call-to-action {
   position: fixed;
   top: 0;
@@ -336,6 +342,7 @@ li a{
   background-color: rgba(3%, 4%, 7%, 0.5);
   padding: 10px;
 }
+
 .btn {
   display: inline-block;
   font-size: 20px;
@@ -359,7 +366,6 @@ li a{
   .container_album {
     flex-basis: calc((100% / 4) - 20px);
   }
-
 }
 
 @media screen and (max-width:750px){
@@ -383,10 +389,19 @@ li a{
   .container_album {
     flex-basis: calc((100% / 2) - 20px);
   }
+}
 
+/* media query per l'altezza */
+
+@media screen and (max-width:750px) and (max-height: 350px) {
+
+  .call-to-action  {
+    display: none;
+  }
 }
 
 /* footer */
+
 .footer {
   width: 100%;
   height: 90px;
@@ -400,6 +415,9 @@ li a{
   align-items: center;
   padding: 0 10px;
 }
+
+
+/* footer left */
 
 .info {
   display: flex;
@@ -435,6 +453,9 @@ li a{
 .footer-icon {
   color: #76787D;
 }
+
+
+/* footer center */
 
 .reader {
   display: flex;
@@ -486,10 +507,10 @@ i.bigger {
   top: -3px;
   left: 150px;
 }
-.riprodution:hover .riprodution-circle {
+.riprodution_bar:hover .riprodution-circle {
   display: block;
 }
-.riprodution:hover .riprodution-effective {
+.riprodution_bar:hover .riprodution-effective {
   border: 1px solid #ADFF2F;
 }
 .riprodution .num {
@@ -497,6 +518,9 @@ i.bigger {
   font-size: 0.8em;
   color: white;
 }
+
+
+/* footer right */
 
 .volume {
   display: flex;
@@ -556,7 +580,6 @@ i.bigger {
   .circle_audio {
     margin-left: 60px;
   }
-
 }
 
 @media screen and (max-width: 750px){
@@ -599,5 +622,4 @@ i.bigger {
   .circle_audio {
     margin-left: 100px;
   }
-
 }
