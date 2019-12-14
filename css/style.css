@@ -281,9 +281,6 @@ li a{
   display: block;
 }
 
-.album_row {
-width: 100%;
-}
 
 .album_container .album_img img {
   display: block;
@@ -362,9 +359,6 @@ width: 100%;
     flex-basis: calc(100% / 5);
   }
 
-  .album_row {
-  width: 100%;
-  }
 }
 
 @media screen and (max-width:750px){
@@ -374,16 +368,11 @@ width: 100%;
   }
 
   .container_album_row{
-    width: 130%;
     display: flex;
     flex-wrap: wrap;
   }
   .container_album {
     flex-basis: calc(100% / 3);
-  }
-
-  .album_row {
-  width: 100%;
   }
 
 }
