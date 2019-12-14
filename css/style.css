@@ -462,7 +462,7 @@ li a{
   flex-direction: column;
 }
 .reader_icons {
-  height: 50px;
+  height: 40px;
   text-align: center;
   transition: transform 3s;
 }
