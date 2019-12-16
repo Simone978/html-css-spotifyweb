@@ -427,7 +427,6 @@ li a{
 /* footer left */
 
 .info {
-  width: 20%;
   display: flex;
   flex-wrap: nowrap;
 }
