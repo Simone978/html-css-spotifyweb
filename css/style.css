@@ -277,8 +277,8 @@ li a{
   margin: 20px 0;
 }
 .container_album {
-  flex-basis: calc((100% / 6) - 20px);
-  margin-right: 20px;
+  flex-basis: calc(100% / 6);
+  padding-right: 20px;
   margin-bottom: 20px;
   cursor: pointer;
 }
@@ -364,7 +364,7 @@ li a{
     flex-wrap: wrap;
   }
   .container_album {
-    flex-basis: calc((100% / 4) - 20px);
+    flex-basis: calc(100% / 4);
   }
 }
 
@@ -387,7 +387,7 @@ li a{
     flex-wrap: wrap;
   }
   .container_album {
-    flex-basis: calc((100% / 2) - 20px);
+    flex-basis: calc(100% / 2);
   }
 }
 
@@ -420,6 +420,7 @@ li a{
 /* footer left */
 
 .info {
+  width: 20%;
   display: flex;
   flex-wrap: nowrap;
 }
@@ -460,6 +461,8 @@ li a{
 .reader {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 40%;
 }
 .reader_icons {
   height: 40px;
@@ -481,7 +484,11 @@ i.bigger {
   padding-left: 20px;
 }
 
+.riprodution_bar {
+  width: 100%;
+}
 .riprodution {
+  width: 100%;
   display: flex;
   position: relative;
   flex-direction: row;
@@ -489,11 +496,11 @@ i.bigger {
 }
 
 .riprodution-time {
-  width: 400px;
+  width: 100%;
   border-bottom: 2px solid #76787D;
 }
 .riprodution-effective {
-  width: 100px;
+  width: 25%;
   border-bottom: 2px solid white;
   margin-top: -2px;
 }
@@ -505,7 +512,7 @@ i.bigger {
   background-color: white;
   border-radius: 50%;
   top: -3px;
-  left: 150px;
+  left: 30%;
 }
 .riprodution_bar:hover .riprodution-circle {
   display: block;
@@ -523,6 +530,7 @@ i.bigger {
 /* footer right */
 
 .volume {
+  width: 20%;
   display: flex;
   flex-wrap: nowrap;
 }
@@ -532,15 +540,15 @@ i.bigger {
 }
 
 .audio {
-  width: 200px;
+  width: 100%;
 }
 
 .effective_audio {
-  width: 180px;
+  width: 80%;
 }
 
 .circle_audio {
-  margin-left: 106px;
+  margin-left: 50%;
 }
 
 .volume_icons {
@@ -548,16 +556,6 @@ i.bigger {
 }
 
 @media screen and (max-width: 970px){
-
-  .riprodution-time {
-    width: 200px;
-  }
-  .riprodution-effective {
-    width: 50px;
-  }
-  .riprodution-circle {
-    left: 100px;
-  }
 
   .info_icon {
     display: flex;
@@ -569,20 +567,13 @@ i.bigger {
     padding: 0 3px;
   }
 
-  .audio {
-    width: 100px;
-  }
-
-  .effective_audio {
-    width: 80px;
-  }
-
-  .circle_audio {
-    margin-left: 60px;
-  }
 }
 
 @media screen and (max-width: 750px){
+
+  .volume {
+    width: 25%;
+  }
 
   .footer_icons i {
     font-size: 0.8em;
@@ -596,30 +587,10 @@ i.bigger {
     padding-left: 20px;
   }
 
-  .riprodution-time {
-    width: 100px;
-  }
-  .riprodution-effective {
-    width: 26px;
-  }
-  .riprodution-circle {
-    left: 35px;
-  }
   .riprodution .num {
     padding: 0 5px;
     font-size: 0.5em;
     color: white;
   }
 
-  .audio {
-    width: 80px;
-  }
-
-  .effective_audio {
-    width: 65px;
-  }
-
-  .circle_audio {
-    margin-left: 100px;
-  }
 }
