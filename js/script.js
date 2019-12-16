@@ -1,1 +1,2 @@
-alert ("chi si rivede!");
+
+document.getElementById("first_album").innerHTML="Heavy Metal";
