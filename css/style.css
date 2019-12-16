@@ -507,11 +507,11 @@ i.bigger {
 .riprodution-circle {
   display: none;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   background-color: white;
   border-radius: 50%;
-  top: -3px;
+  top: 1px;
   left: 30%;
 }
 .riprodution_bar:hover .riprodution-circle {
@@ -548,7 +548,7 @@ i.bigger {
 }
 
 .circle_audio {
-  margin-left: 50%;
+  margin-left: 55%;
 }
 
 .volume_icons {
